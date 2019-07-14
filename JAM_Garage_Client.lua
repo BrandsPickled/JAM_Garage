@@ -190,11 +190,11 @@ function JAG:OpenVehicleList(zone)
             local labelvehicle
 
             if val.state == 1 then
-                labelvehicle = '<span style="font-weight:bold;">' .. vehicleName .. ' </span>: ' .. vehiclePlate .. ' : <span style="font-weight:bold;color:green;">Garage</span>'            
+                labelvehicle = '<span style="font-weight:bold;">' .. GetLabelText(vehicleName) .. ' </span>: ' .. vehiclePlate .. ' : <span style="font-weight:bold;color:green;">Garage</span>'            
             elseif val.state == 2 then
-                labelvehicle = '<span style="font-weight:bold;">' .. vehicleName .. ' </span>: ' .. vehiclePlate .. ' : <span style="font-weight:bold;color:orange;">Impound</span>'      
+                labelvehicle = '<span style="font-weight:bold;">' .. GetLabelText(vehicleName) .. ' </span>: ' .. vehiclePlate .. ' : <span style="font-weight:bold;color:orange;">Impound</span>'      
             else                
-                labelvehicle = '<span style="font-weight:bold;">' .. vehicleName .. ' </span>: ' .. vehiclePlate .. ' : <span style="font-weight:bold;color:red;">Unknown</span>'      
+                labelvehicle = '<span style="font-weight:bold;">' .. GetLabelText(vehicleName) .. ' </span>: ' .. vehiclePlate .. ' : <span style="font-weight:bold;color:red;">Unknown</span>'      
             end 
 
             table.insert(elements, {label =labelvehicle , value = val})                      
