@@ -1,7 +1,7 @@
 # JAM_Garage 
 
 Edited slightly so players car names show not the spawn ID shown when you are looking at your vehicles in the list
-Edited by BrandsPickled
+edited by BrandsPickled
 
 * [Discord](https://discord.gg/rBzBN4E)
 
